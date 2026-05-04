@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ACG V0.03 card archive for a custom card game.">
+  <title>ACG V0.03</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page-shell">
+    <header class="site-header">
+      <a href="index.html" class="brand-mark">
+        <span class="brand-title">ACG</span>
+        <span class="brand-version">V0.03</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">Cards</a>
+        <a href="updates.html">Updates</a>
+      </nav>
+    </header>
+
+    <section class="hero-panel">
+      <div>
+        <p class="eyebrow">ACG V0.03</p>
+        <h1>Card Archive</h1>
+        <p class="hero-copy">
+          A deployable card wiki that works locally, can be published online, and is ready
+          to keep the same public link as your updates continue.
+        </p>
+      </div>
+
+      <div class="hero-stats" id="hero-stats"></div>
+    </section>
+
+    <section class="content-stack">
+      <div class="filter-panel">
+        <label class="field">
+          <span>Search</span>
+          <input id="search-input" type="text" placeholder="Search card name...">
+        </label>
+
+        <label class="field">
+          <span>Type</span>
+          <select id="type-filter"></select>
+        </label>
+
+        <label class="field">
+          <span>Rarity</span>
+          <select id="rarity-filter"></select>
+        </label>
+
+        <label class="field">
+          <span>Sort</span>
+          <select id="sort-filter">
+            <option value="newest">Newest</option>
+            <option value="name">Name</option>
+            <option value="rarity">Rarity</option>
+            <option value="type">Type</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="results-bar">
+        <p id="results-count">0 cards shown</p>
+      </div>
+
+      <div class="card-grid" id="card-grid"></div>
+    </section>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
