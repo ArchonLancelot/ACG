@@ -16,7 +16,7 @@ To make the site public:
 
 Once GitHub finishes publishing, the stable site URL should be:
 
-`https://archonlancelot.github.io/ASI/`
+`https://archonlancelot.github.io/ACG/`
 
 Future updates should be pushed to this same repository so the link stays the same.
 
