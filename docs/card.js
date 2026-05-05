@@ -42,7 +42,7 @@ if (!card) {
     </div>
   `;
 } else {
-  document.title = `${card.name} | ACG V0.03`;
+  document.title = `${card.name} | ACG V0.04`;
 
   const tags = (card.tags || [])
     .map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`)
