@@ -1,4 +1,4 @@
-# ACG V0.03
+# ACG V0.04
 
 ACG is a flexible card wiki website for a custom card game.
 
