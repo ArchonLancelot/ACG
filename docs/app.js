@@ -113,7 +113,7 @@ function renderCards(cards) {
   if (!cards.length) {
     const empty = document.createElement("article");
     empty.className = "empty-state";
-    empty.innerHTML = "<h2>No cards found</h2><p>Try a different search or filter.</p>";
+    empty.innerHTML = "<h2>No official cards yet</h2><p>The archive is ready. Cards will appear here once names, stats, images, and abilities are finalized.</p>";
     grid.appendChild(empty);
     return;
   }
